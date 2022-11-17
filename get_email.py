@@ -3,6 +3,7 @@ import ssl
 import smtplib
 from email.message import EmailMessage
 
+# APP GENERATED PASSWORD : tkolbpjnbojpuwmy
 email_send = input("Enter email please: ")
 password = getpass.getpass(
     "FOR GMAIL ONLY PLEASE ENABLE TWO STEP VERIFIACTION AND ENTER IN APP PASSWORD ONLY: ")
