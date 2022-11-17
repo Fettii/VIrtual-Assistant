@@ -13,13 +13,20 @@ timer_var = tkinter.StringVar()
 
 
 def onClick():
-    message = message_var.get()
-    message_var.set("")
+    try:
 
-    timer = float(timer_var.get())
-    timer = timer*60
-    time.sleep(timer)
-    tkinter.messagebox.showinfo("Current Reminder", message)
+        timer = float(timer_var.get())
+
+        message = message_var.get()
+        message_var.set("")
+
+        timer = timer * 60  # this puts the time in minutes
+        time.sleep(timer)
+        return tkinter.messagebox.showinfo("Current Reminder", message)
+
+    except Exception as e:
+        tkinter.messagebox.showinfo(
+            "error", "Invalid input please only use numbers and '.' symbol")
 
 
 submit_but = Button(root, text="Submit",
