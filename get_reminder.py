@@ -29,7 +29,8 @@ message_entry = tkinter.Entry(root, textvariable=message_var,
                               font=('calibre', 10, 'normal'))
 timer_entry = tkinter.Entry(root, textvariable=timer_var,
                             font=('calibre', 10, 'normal'))
-timer_label = tkinter.Label(root, text='Timer: ', font=('calibre', 10, 'bold'))
+timer_label = tkinter.Label(
+    root, text='Timer (in minutes): ', font=('calibre', 10, 'bold'))
 message_label = tkinter.Label(
     root, text='Message: ', font=('calibre', 10, 'bold'))
 
